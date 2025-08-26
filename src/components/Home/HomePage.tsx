@@ -43,9 +43,9 @@ export default function HomePage() {
         {/* Right Image */}
         <div className="flex-1 flex justify-center">
           <Image
-            src="/images/image1.png" // 👉 replace with your image in public folder
+            src="/images/image1.jpeg" // 👉 replace with your image in public folder
             alt="stuti"
-            width={400}
+            width={450}
             height={400}
             className="rounded-lg object-contain"
             priority

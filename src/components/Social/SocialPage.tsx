@@ -16,7 +16,7 @@ export default function SocialSection() {
           className="object-contain"
         />
       ),
-      link: "https://www.instagram.com/yourusername",
+      link: "#",
       borderColor: "border-pink-500",
       hoverBg: "hover:bg-pink-500/20",
     },
@@ -32,7 +32,7 @@ export default function SocialSection() {
           className="object-contain"
         />
       ),
-      link: "https://www.linkedin.com/in/yourusername",
+      link: "https://www.linkedin.com/in/stutikeshari",
       borderColor: "border-blue-500",
       hoverBg: "hover:bg-blue-500/20",
     },
@@ -48,7 +48,7 @@ export default function SocialSection() {
           className="object-contain"
         />
       ),
-      link: "mailto:yourmail@example.com",
+      link: "mailto:stutikeshari2@gmail.com",
       borderColor: "border-red-500",
       hoverBg: "hover:bg-red-500/20",
     },
@@ -64,7 +64,7 @@ export default function SocialSection() {
           className="object-contain"
         />
       ),
-      link: "https://wa.me/91XXXXXXXXXX",
+      link: "#",
       borderColor: "border-green-500",
       hoverBg: "hover:bg-green-500/20",
     },
@@ -114,10 +114,18 @@ export default function SocialSection() {
           <p className="mt-4 text-gray-300 max-w-xl mx-auto">
             Let’s collaborate and build something amazing together.
           </p>
-          <button className="mt-6 bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-yellow-500 transition">
-            Hire Me
-          </button>
-        </div>
+           {/* Buttons */}
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <Link
+              href="mailto:stutikeshari2@gmail.com"
+              className="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition"
+            >
+              Hire Me
+            </Link>
+            
+          </div>
+        </div>     {/* Content  div close*/}
+        
       </div>
     </section>
   );

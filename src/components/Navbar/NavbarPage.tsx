@@ -12,15 +12,15 @@ const Navbar = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const links = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#resume", label: "Education" },
-  { href: "#services", label: "Services" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
-  { href: "#certificate", label: "Certificates" },
-  { href: "#contact", label: "Contact Me" },
-];
+    { href: "#home", label: "Home" },
+    { href: "#about", label: "About" },
+    { href: "#resume", label: "Education" },
+    { href: "#services", label: "Services" },
+    { href: "#skills", label: "Skills" },
+    { href: "#projects", label: "Projects" },
+    { href: "#certificate", label: "Certificates" },
+    { href: "#contact", label: "Contact Me" },
+  ];
 
   // Add shadow + hide on scroll
   useEffect(() => {
@@ -56,21 +56,26 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 lg:gap-10 text-base lg:text-lg font-medium">
-  {links.map((link) => (
-    <li key={link.href}>
-      <a
-        href={link.href}
-        className="nav-link relative pb-1 transition duration-300
-          hover:text-yellow-400
-          after:content-[''] after:absolute after:left-0 after:bottom-0
-          after:w-0 after:h-[2px] after:bg-yellow-400
-          hover:after:w-full after:transition-all after:duration-300"
-      >
-        {link.label}
-      </a>
-    </li>
-  ))}
-</ul>
+          {links.map((link) => (
+            <li key={link.href}>
+              <a
+                href={link.href}
+                className={`relative transition duration-300 pb-1 
+                  ${
+                    pathname === link.href
+                      ? "text-yellow-400 border-b-2 border-yellow-400"
+                      : "hover:text-yellow-400"
+                  } 
+                  after:content-[''] after:absolute after:left-0 after:bottom-0 
+                  after:w-0 after:h-[2px] after:bg-yellow-400 
+                  hover:after:w-full after:transition-all after:duration-300
+                `}
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
 
         {/* Mobile Menu Button */}
         <button

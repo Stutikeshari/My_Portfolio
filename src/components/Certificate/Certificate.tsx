@@ -29,8 +29,8 @@ const certificates = [
 
 export default function CertificatePage() {
   return (
-    <section className="min-h-screen bg-black py-16">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="bg-black py-16" id="certificate">
+      <div className="max-w-6xl mx-auto px-6" data-aos="fade-up">
         {/* Heading */}
         <div className="relative text-center mb-12">
           <h1 className="absolute inset-0 text-7xl font-extrabold text-white/10 tracking-widest flex items-center justify-center">
@@ -48,7 +48,7 @@ export default function CertificatePage() {
         </div>
 
         {/* Responsive grid for cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" data-aos="fade-up">
           {certificates.map((cert) => (
             <article
               key={cert.id}

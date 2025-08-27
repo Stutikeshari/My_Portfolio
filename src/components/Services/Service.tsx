@@ -10,8 +10,7 @@ type ServiceProps = {
 const ServiceCard: React.FC<ServiceProps> = ({ title, description, icon }) => {
   return (
     <div
-      className={`
-        group relative flex flex-col 
+      className={`group relative flex flex-col 
         h-auto sm:h-72 lg:h-80 
         p-5 sm:p-6 md:p-8 
         rounded-xl shadow-xl cursor-pointer 
@@ -19,8 +18,7 @@ const ServiceCard: React.FC<ServiceProps> = ({ title, description, icon }) => {
         transition-all duration-500 hover:text-black 
         overflow-hidden
         max-w-xs sm:max-w-sm lg:max-w-md mx-auto
-      `}
-    >
+      `} >
       {/* Gradient background effect */}
       <span
         className="absolute inset-0 bg-gradient-to-r from-yellow-200 to-yellow-500
@@ -154,7 +152,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-16 bg-black text-white">
+    <section className="py-16 bg-black text-white" id="services">
       {/* Section Header */}
       <div className="relative text-center mb-12">
         {/* Background big text */}

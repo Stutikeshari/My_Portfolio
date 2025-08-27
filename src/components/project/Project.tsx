@@ -55,8 +55,8 @@ const projects = [
 
 export default function ProjectCards() {
   return (
-    <section className="w-full bg-black py-16">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="w-full bg-black py-16" id="projects">
+      <div className="max-w-7xl mx-auto px-4" data-aos="fade-up">
     {/* Heading */}   
   <div className="relative text-center mb-12">
     {/* Background big text */}
@@ -74,7 +74,7 @@ export default function ProjectCards() {
   </div>
 
        {/* Grid */}
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 px-4 sm:px-6 lg:px-0">
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 px-4 sm:px-6 lg:px-0" data-aos="fade-up">
   {projects.map((project) => (
     <div
       key={project.id}

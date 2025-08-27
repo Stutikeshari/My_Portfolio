@@ -16,9 +16,9 @@ const logos = [
 
 export default function TechMarquee() {
   return (
-    <section className="w-full bg-black py-12">
+    <section className="w-full bg-black py-12" id="skills">
       {/* Heading */}
-      <div className="relative text-center mb-12">
+      <div className="relative text-center mb-12" data-aos="fade-up">
         <h1 className="absolute inset-0 text-5xl sm:text-6xl md:text-7xl font-extrabold text-white/10 tracking-widest flex items-center justify-center">
           Skills
         </h1>
@@ -92,11 +92,10 @@ function Card({ name, src }: { name: string; src: string }) {
   return (
     <div
       className="
-        flex flex-col sm:flex-row items-center min-w-[100px] sm:min-w-[140px] md:min-w-[180px]
+        flex flex-col sm:flex-row items-center min-w-[100px] sm:min-w-[180px] md:min-w-[200px]
         rounded-xl border border-white/10 bg-white/5 px-2 sm:px-4 py-2 sm:py-3
         hover:bg-yellow-300 group-hover:text-black transition
-      "
-    >
+      " data-aos="fade-up">
       <div className="flex h-10 w-10 sm:h-15 sm:w-15 md:h-15 md:w-15 items-center justify-center rounded-lg bg-white">
         <Image
           src={src}

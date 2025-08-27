@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-gray-300 py-12">
+    <footer className="bg-black text-gray-300 py-5">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
         
         {/* About - always visible */}
@@ -68,6 +68,13 @@ export default function Footer() {
       <div className="text-center text-sm text-gray-400 mt-10 border-t border-gray-800 pt-6">
         © 2025 All rights reserved | This template is made with ❤ by Stuti Keshari
       </div>
+      {/* Back to Top Button */}
+  <button
+    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+    className="fixed bottom-6 right-6 bg-yellow-400 text-black text-bold p-1  shadow-lg hover:bg-yellow-500 transition"
+  >
+    ↑
+  </button>
     </footer>
   );
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import AOSInit from "@/components/AOSInit"; // this is safe ✅
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,14 +20,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <AOSInit /> {/* ye Client Component hai */}
         {children}
       </body>
     </html>

@@ -42,9 +42,9 @@ const resumeData = [
 
 const ResumePage = () => {
   return (
-   <section className="relative bg-black text-white min-h-screen px-8 py-16">
+   <section className="relative bg-black text-white min-h-screen px-8 py-16" id="resume" >
   {/* Heading */}
-  <div className="relative text-center mb-12">
+  <div className="relative text-center mb-12"  data-aos="fade-up">
     {/* Background big text */}
     <h1 className="absolute inset-0 text-7xl font-extrabold text-white/10 tracking-widest flex items-center justify-center">
       Education
@@ -61,25 +61,30 @@ const ResumePage = () => {
 
   { /* Rest of Resume content goes here */}
    {/* Grid */}
-<div className="grid grid-cols-2 gap-6 sm:gap-8 md:gap-12 px-4 sm:px-6 md:px-10 py-10">
+{/* Grid */}
+<div
+  className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-10 px-2 sm:px-4 md:px-10 py-6"
+  data-aos="fade-up"
+>
   {resumeData.map((item, index) => (
     <div
       key={index}
-      className="bg-[#1a1a1a] rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-yellow-400/50 transition"
+      className="bg-[#1a1a1a] rounded-lg p-4 sm:p-6 shadow-lg hover:shadow-yellow-400/50 transition"
     >
-      <p className="text-yellow-400 text-base sm:text-lg font-semibold mb-1 sm:mb-2">
+      <p className="text-yellow-400 text-sm sm:text-base font-semibold mb-1">
         {item.year}
       </p>
-      <h3 className="text-lg sm:text-xl font-bold mb-1">{item.title}</h3>
-      <p className="uppercase text-gray-400 text-sm sm:text-md mb-2 sm:mb-3">
+      <h3 className="text-base sm:text-lg font-bold mb-1">{item.title}</h3>
+      <p className="uppercase text-gray-400 text-xs sm:text-sm mb-2">
         {item.place}
       </p>
-      <p className="text-gray-300 text-sm sm:text-md leading-relaxed">
+      <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
         {item.desc}
       </p>
     </div>
   ))}
 </div>
+
 
 
         {/* Button */}

@@ -73,8 +73,8 @@ export default function SocialSection() {
   return (
     <section className="bg-black">
       {/* Social Icons Row */}
-     <div className="relative z-20 -mb-20">
-  <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+     <div className="relative z-20 -mb-20" >
+  <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center" data-aos="fade-down">
     {socials.map((item) => (
       <Link
         key={item.id}
@@ -93,7 +93,7 @@ export default function SocialSection() {
 
 
       {/* Background Section with Hire Me */}
-      <div className="relative h-[350px] flex items-center justify-center">
+      <div className="relative h-[350px] flex items-center justify-center" data-aos="fade-up">
         {/* Background Image */}
         <Image
           src="/images/mountain.jpg"

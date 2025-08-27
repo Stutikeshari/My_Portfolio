@@ -5,10 +5,10 @@ import Link from "next/link";
 
 const AboutPage = () => {
   return (
-    <section className="bg-black text-white min-h-screen flex items-center justify-center px-6 py-16">
+    <section className="bg-black text-white px-6 py-5" id="about">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left: Image */}
-        <div className="flex justify-center">
+        <div className="flex justify-center"  data-aos="fade-right">
           <Image
             src="/images/img2.png" 
             alt="About Me"

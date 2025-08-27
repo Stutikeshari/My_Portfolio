@@ -11,12 +11,12 @@ const Navbar = () => {
   const links = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "/resume", label: "Resume" },
+    { href: "/resume", label: "Education" },
     { href: "/services", label: "Services" },
     { href: "/skills", label: "Skills" },
     { href: "/projects", label: "Projects" },
-    { href: "/blog", label: "My Blog" },
-    { href: "/contact", label: "Contact" },
+    { href: "/certificate", label: "Certificates" },
+    { href: "/contact", label: "Contact Me" },
   ];
 
   return (
@@ -54,9 +54,9 @@ const Navbar = () => {
 
       {/* Mobile Dropdown */}
       {open && (
-        <ul className="md:hidden bg-black flex flex-col items-center gap-6 py-6">
+        <ul className="md:hidden bg-black flex flex-col items-center gap-4 py-4 text-base">
           {links.map((link) => (
-            <li key={link.href}>
+            <li key={link.href} className="w-full text-center">
               <Link
                 href={link.href}
                 onClick={() => setOpen(false)}
@@ -64,7 +64,7 @@ const Navbar = () => {
                   pathname === link.href
                     ? "text-yellow-400"
                     : "hover:text-yellow-400"
-                } transition text-lg`}
+                } transition block py-2`}
               >
                 {link.label}
               </Link>

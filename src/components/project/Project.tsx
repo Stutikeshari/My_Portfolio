@@ -8,7 +8,7 @@ const projects = [
     title: "Finance Consulting Website",
     tech: "Next Js, Tailwind CSS, JavaScript",
     desc: "A modern and responsive consulting website designed with clean UI/UX, showcasing services and projects.",
-    img: "/images/project1.png",
+    img: "/images/finance.png",
     link: "https://finance-consulting-website.vercel.app/",
   },
   {
